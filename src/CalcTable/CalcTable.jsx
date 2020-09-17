@@ -6,30 +6,27 @@
 
 import React from 'react'
 import { cn } from '@bem-react/classname'
-import config from 'config'
+// import config from 'config'
 
 import './CalcTable.pcss'
 
 import Header from './Header'
-// import Image from './Image'
+import Content from './Content'
+import Section from './Section'
 
 const cnCalcTable = cn('CalcTable')
 
-const {
-  tableColumns,
-  // defaultGreeting,
-  // defaultName,
-} = config.constants
+// const { tableColumns } = config.constants
 
 const CalcTable = () => {
   return (
-    <div className={cnCalcTable()}>
-      <Header columns={tableColumns} />
-      {/*
-      <Columns />
-      <Image />
-      */}
-    </div>
+    <table className={cnCalcTable()}>
+      <Header />
+      <Content>
+        <Section title="Сильные стороны" />
+        <Section title="Слабые стороны" />
+      </Content>
+    </table>
   )
 }
 

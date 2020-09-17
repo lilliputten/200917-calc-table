@@ -1,9 +1,10 @@
 {
   "name": "calc-table",
   "description": "Dynamic calculator table",
+  "version": "0.0.2",
+  "changed": "2020.09.18, 00:29",
   "author": "",
   "license": "ISC",
-  "version": "0.0.1",
   "main": "src/index.js",
   "keywords": [
     "webpack",
