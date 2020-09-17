@@ -1,6 +1,6 @@
 {
-  "name": "minimal-webpack-project",
-  "description": "Minimal Webpack Project",
+  "name": "calc-table",
+  "description": "Dynamic calculator table",
   "author": "",
   "license": "ISC",
   "NOTE": "All version and time stamp properties are updated automatically (see `util-update-build-props.sh`, `util-increment-version.sh`)!",
@@ -8,6 +8,7 @@
   "main": "src/index.js",
   "keywords": [
     "webpack",
+    "table",
     "project",
     "demo"
   ],

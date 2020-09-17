@@ -14,7 +14,7 @@ import { render } from 'react-dom'
 
 import config from 'config'
 
-import Hello from './Hello'
+import CalcTable from './CalcTable'
 
 // Demo app styles
 import './index.pcss'
@@ -23,7 +23,7 @@ const name = config.constants.defaultUser || 'Name'
 
 const demoContent = (
   <div className="demo">
-    <Hello greeting="Hello" name={name} />
+    <CalcTable greeting="CalcTable" name={name} />
   </div>
 )
 

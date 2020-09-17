@@ -12,11 +12,11 @@ import ImageFile from './img/LockColor2.svg'
 
 import './Image.pcss'
 
-const cnHello = cn('Hello')
+const cnTable = cn('Table')
 
 export default () => {
   return (
-    <div className={cnHello('Image')}>
+    <div className={cnTable('Image')}>
       <img src={ImageFile} />
     </div>
   )

@@ -9,8 +9,8 @@ import { cn } from '@bem-react/classname'
 
 import './Title.pcss'
 
-const cnHello = cn('Hello')
+const cnTable = cn('Table')
 
 export default ({ greeting, name }) => (
-  <h1 className={cnHello('Title')}>{greeting}, {name}!</h1>
+  <h1 className={cnTable('Title')}>{greeting}, {name}!</h1>
 )
