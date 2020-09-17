@@ -3,7 +3,6 @@
   "description": "Dynamic calculator table",
   "author": "",
   "license": "ISC",
-  "NOTE": "All version and time stamp properties are updated automatically (see `util-update-build-props.sh`, `util-increment-version.sh`)!",
   "version": "0.0.1",
   "main": "src/index.js",
   "keywords": [

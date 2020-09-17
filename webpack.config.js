@@ -30,7 +30,7 @@ module.exports = (env, argv) => {
   const isDev = (/* isDevServer || */ mode === 'development')
   const isProd = !isDev // mode === 'production'
   const useDevTool = true // && (isDev || isDevServer) // Need server restart
-  const minimizeBundles = false && isProd // To minimize production bundles
+  const minimizeBundles = true && isProd // To minimize production bundles
   const sourceMaps = true // To minimize production bundles
   // const extemeUglify = false // Use mangling (WARNING: May broke some code! Don't use without testing!)
   const DEBUG = true && (isDev || isDevServer)
@@ -314,8 +314,8 @@ module.exports = (env, argv) => {
       }),
       !isDevServer && new CopyWebpackPlugin({ // Simply copies the files over
         patterns: [
-          { from: 'favicon.ico', to: './' },
-          { from: 'build-static', to: './', ...CopyWebpackPluginOptions },
+          fs.existsSync('favicon.ico') && { from: 'favicon.ico', to: './' },
+          fs.existsSync('build-static') && { from: 'build-static', to: './', ...CopyWebpackPluginOptions },
         ].filter(x => x),
       }),
       new HtmlWebpackPlugin({

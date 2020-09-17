@@ -1,29 +1,36 @@
-/** @module Table
- *  @desc Table demo component
- *  @since 2020.05.19, 17:16
- *  @changed 2020.05.27, 22:58
+/** @module CalcTable
+ *  @desc CalcTable demo component
+ *  @since 2020.09.17, 20:39
+ *  @changed 2020.09.17, 20:39
  */
 
 import React from 'react'
 import { cn } from '@bem-react/classname'
 import config from 'config'
 
-import './Table.pcss'
+import './CalcTable.pcss'
 
-import Title from './Title'
-import Image from './Image'
+import Header from './Header'
+// import Image from './Image'
 
-const cnTable = cn('Table')
+const cnCalcTable = cn('CalcTable')
 
-const { defaultGreeting, defaultName } = config.constants
+const {
+  tableColumns,
+  // defaultGreeting,
+  // defaultName,
+} = config.constants
 
-const Table = ({ greeting = defaultGreeting, name = defaultName }) => {
+const CalcTable = () => {
   return (
-    <div className={cnTable()}>
-      <Title greeting={greeting} name={name} />
+    <div className={cnCalcTable()}>
+      <Header columns={tableColumns} />
+      {/*
+      <Columns />
       <Image />
+      */}
     </div>
   )
 }
 
-export default Table
+export default CalcTable

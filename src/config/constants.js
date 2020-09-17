@@ -9,4 +9,12 @@ module.exports = { // Common-used build variables...
   defaultGreeting: 'Some greeting',
   defaultName: 'Some name',
 
+  tableColumns: [
+    { id: 'adv', title: 'Сильные стороны' },
+    { id: 'descr', title: 'Характеристика' },
+    { id: 'value', title: 'Значимость' },
+    { id: 'rate', title: 'Оценка' },
+    { id: 'impact', title: 'Воздействие' },
+  ],
+
 }

@@ -24,6 +24,7 @@ const name = config.constants.defaultUser || 'Name'
 const demoContent = (
   <div className="demo">
     <CalcTable greeting="CalcTable" name={name} />
+    {/* Add here some service blocks: action buttons etc... */}
   </div>
 )
 
