@@ -16,7 +16,7 @@ const classProps = { type: 'SectionTitleTitle' }
 
 const { tableColumns } = config.constants
 
-export default ({ title }) => {
+const SectionTitle = ({ title }) => {
   return (
     <tr className={cnCalcTable('Row', classProps)}>
       <td className={cnCalcTable('Cell', classProps)} colSpan={tableColumns.length}>
@@ -25,3 +25,5 @@ export default ({ title }) => {
     </tr>
   )
 }
+
+export default SectionTitle

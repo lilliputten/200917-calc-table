@@ -16,9 +16,9 @@ const classProps = { type: 'Header' }
 
 const { tableColumns: columns } = config.constants
 
-export default (/* { columns } */) => {
-  const content = columns.map(({ id, title, hidden }) => {
-    const text = hidden || !title ? '' : title
+const Header = () => {
+  const content = columns.map(({ id, title, headerHidden }) => {
+    const text = headerHidden || !title ? '' : title
     return (
       <th key={id} id={id} className={cnCalcTable('Cell', classProps)}>
         {text}
@@ -33,3 +33,5 @@ export default (/* { columns } */) => {
     </thead>
   )
 }
+
+export default Header

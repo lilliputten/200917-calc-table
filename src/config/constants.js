@@ -7,11 +7,11 @@
 module.exports = { // Common-used build variables...
 
   tableColumns: [
-    { id: 'name', title: 'Имя параметра', hidden: true },
-    { id: 'descr', title: 'Характеристика' },
-    { id: 'value', title: 'Значимость' },
-    { id: 'rate', title: 'Оценка' },
-    { id: 'impact', title: 'Воздействие' },
+    { id: 'name', title: 'Имя параметра', headerHidden: true, inputType: 'Text' },
+    { id: 'descr', title: 'Характеристика', inputType: 'Text' },
+    { id: 'value', title: 'Значимость', inputType: 'Number' },
+    { id: 'rate', title: 'Оценка', inputType: 'Number' },
+    { id: 'impact', title: 'Воздействие', inputType: 'Number', inputMode: 'result' },
   ],
 
   itemsCount: 4,

@@ -17,8 +17,8 @@ import './Section.pcss'
 
 const { itemsCount } = config.constants
 
-export default ({ title }) => {
-  const content = Array.from({ length: itemsCount }, (_, n) => {
+const Section = ({ title }) => {
+  const items = Array.from({ length: itemsCount }, (_, n) => {
     return (
       <Item key={n} id={'Item' + n} />
     )
@@ -26,7 +26,7 @@ export default ({ title }) => {
   return (
     <React.Fragment>
       <SectionTitle title={title} />
-      {content}
+      {items}
       {/* content:
           - Items (x itemsCount)
           - Other factors
@@ -35,3 +35,5 @@ export default ({ title }) => {
     </React.Fragment>
   )
 }
+
+export default Section
